@@ -1,0 +1,32 @@
+<form action = "" metohd = "GET | POST">
+
+<strong> Signup Form </strong>
+<br/>
+<label for = "user_name"> 이름 </label>
+<input type = "text" id = "user_name">
+<br/>
+<label for = "user_id"> 아이디 </label>
+<input type = "text" id = "user_id" placeholder = "최소 5자, 최대 10자", 
+		minlength = "5", maxlength = "10", required>
+<br/>
+<label for = "user_password"> 비밀번호 </label>
+<input type = "password" id = "user_password" placeholder = "최소 6자, 최대 12자", min = "6", max = "12", required>
+<br/>
+<label for = "user_email"> 이메일 </label>
+<input type = "email" id = "user_email">
+<br/>
+<label for = "user_tel"> 전화번호 </label>
+<input type = "tel" id = "user_tel" pattern = "[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+       		placeholder = "000-0000-0000 형식">
+<br/>
+<label for = "user_age"> 만 나이 </label>
+<input type = "number" id = "user_age" placeholder = "12세 이상 122세 이하"
+       		min = "12" max = "122">
+<br/>
+<label for = "user_profile_picture"> 프로필 사진 </label>
+<input type = "file" id = "user_profile_picture" placeholder = "PNG,JPG만 허용"
+       		accept=".jpg, .png">
+<br/>
+<input type = "submit">
+
+</form>
